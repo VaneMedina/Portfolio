@@ -1,0 +1,337 @@
+/*CSS variables*/
+@import url(/portfolioWebSite/css/_variables.css);
+
+/*CSS global*/
+@import url(/portfolioWebSite/css/_global.css);
+
+
+
+/*start navigation*/
+
+
+.enlaces-header {
+    position: fixed;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 100%;    
+    clip-path: inset(0 86% 0 0);
+    transition: ease-in .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: var(--box-shadow);
+    z-index: 100000;
+}
+
+.enlaces-header::after{
+    content: "";
+    display: block;
+    margin-left: 35rem;
+}
+
+.enlaces-header .logo a > i{
+    font-size: 1.9rem;
+    margin: 1.5rem 1rem .5rem .5rem;
+}
+
+
+.enlaces-header a > i{
+    font-size: 1.9rem;
+    margin: 1.5rem 1.4rem 1.2rem .5rem;
+}
+
+.enlaces-header > a{
+    text-decoration: none;
+    font: normal 900 1.3rem/50px var(--roboto);
+}
+
+
+.nav .enlaces-header a {
+    color: #232323;
+    font-weight: 500;
+}
+
+.nav .menudos {
+    /*-webkit-clip-path: circle(150% at 100% 0%);*/
+    clip-path: inset(0 35% 0 0);
+}
+
+
+
+/*end navigation*/
+
+/*Banner Area*/
+
+.site-main .site-banner .site-title{
+    padding: 2.5rem;
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 20%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 10vw;
+    background: #000;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-img > img{
+    padding: 10rem 2rem 2rem 2rem; 
+}
+
+
+/*Buttons*/
+.button{
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px var(--roboto); 
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 4%;
+}
+
+.button.primary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: #ffffff;
+    box-shadow: var(--box-shadow);
+    margin-right: 5%;
+}
+
+.button.primary-button:hover{
+    background: #ffffff;
+    background-clip: padding-box;
+    color: #232323;
+}
+
+.button.primary-button::after, .button.secondary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.button.secondary-button{
+    background: #ffffff;
+    background-clip: padding-box;
+}
+
+.button.secondary-button:hover{
+    background: var(--gradient-color);
+    color: #ffffff;
+    box-shadow: var(--box-shadow);
+}
+
+/*End Banner Area*/
+
+
+
+/*Start Services Area*/
+
+.site-main .services-area{
+    padding: 7rem 1rem;
+}
+
+.site-main .services-area .services-title h2{
+    padding-bottom: 2rem;
+}
+
+.site-main > .services-area .services{
+    background: rgba(248,  252, 253, 0.973);
+    margin: 1rem 0;
+    transition: box-shadow .7s ease;
+}
+
+.site-main > .services-area .services:hover{
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.site-main .services-area .services .services-img .spring > img{
+    width: 100px;
+}
+
+.site-main .services-area .services .services-img > img{
+    width: 80px;
+    height: 80px;
+}
+
+
+
+/*End Services Area*/
+
+
+/*Start About Area*/
+
+
+.title-text{
+    font: normal 600 2.2rem/60px var(--roboto); 
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.site-main .about-area{
+    padding: 5rem 0 5rem 0;
+}
+
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 2.2rem/60px var(--roboto);
+    letter-spacing: 10px;
+    padding: .5rem;
+}
+
+.site-main .about-area .row h2{
+    padding: 2rem;
+}
+
+p.para{
+    color: var(--text-color);
+    font: normal 300 1.1rem/25px var(--roboto);
+    padding: .3rem 2.3rem;
+}
+
+.site-main .about-area .img > img{
+    padding: 2rem 4rem;
+}
+
+/*End About Area*/
+
+
+/*Project Area*/
+
+.site-main .project-area{
+    padding: 4rem 0;
+}
+
+.site-main .project-area .button-group{
+    padding-left: 2rem;
+}
+
+
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 .9rem/100px var(--roboto);
+    text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button + button{
+    padding-left: 3.1rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 800 25px/12px var(--roboto);
+}
+
+a:focus,
+a:active
+a:hover
+.btn:active,
+.btn.active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+
+.site-main .project-area .grid .our-project .img > img{
+    width: 100%;
+    padding: 1.5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main .project-area .grid .our-project .img > img:hover{
+    box-shadow: var(--box-shadow);
+}
+/*End Project Area*/
+
+
+
+
+/*Start Footer Area*/
+
+footer{
+    position: relative;
+    background-color: #f9eef4;
+    opacity: 1;
+    background-image:  radial-gradient(#D984A3 0.75px, transparent 0.75px), radial-gradient(#D984A3 0.75px, #f9eef4 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0,15px 15px;
+    padding: 10rem 5rem 2rem 5rem;
+}
+
+
+footer.footer-area::before{
+    content: "";
+    background: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 50%  100%);
+}
+
+footer.footer-area .social h5{
+    font: normal 600 2rem/50px var(--roboto);
+    color: var(--text-color);
+}
+
+footer.footer-area .social a > i{
+    font-size: 2rem;
+    padding: 2rem;
+    color: var(--text-color);
+}
+
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
+}
+
+footer.footer-area a{
+    text-decoration: none;
+    color: var(--gradient-color);
+    font-weight: 800;
+}
+
+footer .code{
+    padding: 1.5%;
+}
+
+
+footer .code > i{
+    font-size: 1.9rem;
+    color: #232323;
+    float: right;
+}
+/*End Footer Area*/
+
+
+@media screen and (max-width:800px) {
+    .site-main .site-banner .banner-img > img{
+        display: none;
+    }
+    
+}
+
